@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_coffe/coffee_bloc.dart';
 import 'coffee_concept_home.dart';
 
-void main() => runApp(MainCoffee());
+void main() => runApp(MainCoffeeHome());
 
-class MainCoffee extends StatefulWidget {
-  const MainCoffee({Key? key}) : super(key: key);
+class MainCoffeeHome extends StatefulWidget {
+  const MainCoffeeHome({Key? key}) : super(key: key);
 
   @override
-  _MainCoffeeState createState() => _MainCoffeeState();
+  _MainCoffeeHomeState createState() => _MainCoffeeHomeState();
 }
 
-class _MainCoffeeState extends State<MainCoffee> {
+class _MainCoffeeHomeState extends State<MainCoffeeHome> {
   // final bloc = CoffeeBLoC();
 
   // @override

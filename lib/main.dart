@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation_with_diego/coffee_concept/main_coffee.dart';
+import 'package:flutter_animation_with_diego/pizza_order/pizza_order_home.dart';
+
+import 'coffee_concept/main_coffee_home.dart';
 
 void main() {
   runApp(MyApp());
@@ -48,7 +50,22 @@ class _MyHomePageState extends State<MyHomePage> {
                         pageBuilder: (context, animation, _) {
                           return FadeTransition(
                             opacity: animation,
-                            child: MainCoffee(),
+                            child: MainCoffeeHome(),
+                          );
+                        }),
+                  );
+                },
+              ),
+              RaisedButton(
+                child: Text("Pizza Order"),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    PageRouteBuilder(
+                        transitionDuration: const Duration(milliseconds: 650),
+                        pageBuilder: (context, animation, _) {
+                          return FadeTransition(
+                            opacity: animation,
+                            child: PizzaOrderHome(),
                           );
                         }),
                   );
