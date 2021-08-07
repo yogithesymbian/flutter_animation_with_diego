@@ -1,7 +1,7 @@
 // import 'package:flutter/material.dart';
 
 // const _initialPage = 8.0;
-
+// init
 // class CoffeeBLoC {
 //   final pageCoffeController =
 //       PageController(viewportFraction: 0.35, initialPage: _initialPage.toInt());
