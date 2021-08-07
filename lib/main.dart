@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation_with_diego/pizza_order/pizza_order_home.dart';
+import 'package:flutter_animation_with_diego/pizza_order/main_pizza_order_app.dart';
+import 'package:flutter_animation_with_diego/pizza_order/pizza_order_detail.dart';
 
 import 'coffee_concept/main_coffee_home.dart';
 
@@ -65,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         pageBuilder: (context, animation, _) {
                           return FadeTransition(
                             opacity: animation,
-                            child: PizzaOrderHome(),
+                            child: MainPizzaOrderApp(),
                           );
                         }),
                   );
